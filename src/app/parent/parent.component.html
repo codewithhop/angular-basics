@@ -1,0 +1,4 @@
+<p>
+    Hello, my name is {{name}}
+</p>
+<app-child [parentName]="name" (changeParentNameEmitter)="onNameChange($event)"></app-child>
