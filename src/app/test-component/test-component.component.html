@@ -1,0 +1,6 @@
+<p>
+    {{ user.firstName }}
+</p>
+<button [disabled]="isDisabled" (click)="isDisabled = true"> Disabled </button>
+
+<input [(ngModel)]="user.firstName" />
