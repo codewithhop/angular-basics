@@ -1,0 +1,11 @@
+
+
+<div>
+    <span *ngFor="let child of childNames; let i = index">
+        {{child}}
+    </span>
+    <div *ngFor="let child of childNames; let i = index">
+        <app-child [name]="child" (setName)="changeName($event, i)"></app-child>
+    </div>
+</div>
+ 
